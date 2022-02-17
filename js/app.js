@@ -113,4 +113,4 @@ document.getElementById('save-Button').addEventListener('click', function () {
     const finalSaving = parseFloat(savingTotalText);
     savingTotal.innerText = parsentageTotal;
 
-})
+});
