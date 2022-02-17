@@ -1,7 +1,6 @@
 document.getElementById('calculator-button').addEventListener('click', function () {
 
     const myIncomeInput = document.getElementById('monthly-income');
-
     const myIncomeAmt = myIncomeInput.value;
     myIncomeInput.value = '';
 
@@ -48,6 +47,7 @@ document.getElementById('save-Button').addEventListener('click', function () {
     const saveInputPersantage = document.getElementById('save-input');
     const saveInputPersantageText = saveInputPersantage.value;
     const saveInput = parseFloat(saveInputPersantageText);
+
     // console.log(saveInputPersantageText);
     const perviousBlance = document.getElementById('blance-amount');
     const previousBlanceAmount = perviousBlance.innerText;
@@ -74,7 +74,5 @@ document.getElementById('save-Button').addEventListener('click', function () {
     const remainingBlanceTotal = parseFloat(remainingBlanceText);
     const pokectBlance = remainingBlanceTotal + restAmount;
     remainingBlance.innerText = pokectBlance;
-
-
 
 });
