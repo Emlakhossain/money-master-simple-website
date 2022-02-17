@@ -17,7 +17,7 @@
 <body>
     <!-- head section of this project -->
     <header>
-        <h1 class="text-info fw-bold text-center mt-5">My Balance Statement<span class="text-center"><img
+        <h1 class="text-info fw-bold text-center mt-5 col-12">My Balance Statement<span class="text-center"><img
                     style="width: 100px; height: 100px;" src="img/doller-removebg-preview.png" alt=""></span> </h1>
 
     </header>
@@ -25,10 +25,10 @@
     <div class="container">
         <div class="row">
             <div class="row max-auto">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-12">
                     <img class="img-fluid p-5" src="img/cash.jpg" alt="">
                 </div>
-                <div class="col-lg-6 bg-success text-dark bg-opacity-10 ">
+                <div class="col-lg-6 col-12 bg-success text-dark bg-opacity-10 ">
                     <h3 class="text-center my-3 fw-bold">My Income</h3>
                     <p class="align-center"> <span class="fw-bold">Income:</span>
                     </p>
@@ -44,7 +44,7 @@
                     </p>
                     <input id="clothes-cost" type="text">
                     <div class="d-grid gap-2 col-6 mx-auto my-4">
-                        <button onclick="calculator()" class="btn btn-primary fw-bold" type="button">Calculator</button>
+                        <button id="calculator-button" class="btn btn-primary fw-bold" type="button">Calculator</button>
 
                     </div>
                     <div class="text-center">
@@ -52,12 +52,13 @@
                         <h4> Blance: <span id="blance-amount">00</span></h4>
                     </div>
                     <div class="">
-                        <p class="text-center my-3">Save: <span><input type="text"> %</span>
-                            <button class="btn btn-primary" type="button">Save</button>
+                        <p class="text-center my-3">Save: <span>
+                                <input id="save-input" type="text"> %</span>
+                            <button id="save-Button" class="btn btn-primary" type="button">Save</button>
                         </p>
                     </div>
                     <div>
-                        <p class="fw-bold text-center">Saving Amount: <span>00</span></p>
+                        <p class="fw-bold text-center">Saving Amount: <span id="seving-total">00</span></p>
                         <p class="fw-bold text-center">Remaining Blance: <span>00</span></p>
                     </div>
 
